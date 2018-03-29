@@ -1,0 +1,12 @@
+language: go
+go:
+- '1.10'
+- master
+script:
+- go test -v
+- go build
+deploy:
+  provider: heroku
+  app: to-doist
+  api_key:
+    secure: rgeMnv9K9ueBehnaM90jJjEcYWtjC7hlCdg0uIIbqAUdW6NdRCWufEQ+zFCwRbOjGtdm+evrTe1BqDQ51CqJ0hn7EVtVSKxKsli6wxprymy475po8B0WOZKkxDddUHgJJZEBkcBBFtR1UebJvDMuTZ1P0ybuZXKZUvEmsWaVw8We6+RzrRNrPHZhWHxaL7M3s0aMdGbTLabbR2MhQCPESFYYWgBtG6GrRKUterriH7Zj94sl8393tGVRG0DqlizlQSNJa0ho5hy2pF51HLVwGEi8OyzeUJP0wcQtqfi7SJM2xCGWoH+X0H7ayppi26apWmwfsB9MTB0bCGR2t9ok3/NFaal8mVvPNNnYQ8vOQab6Sv76EnJvwhHqec4VQiStAK6T21MgNEKwKmGnt3somAlyOUjmS6byGCSa9J/np5pzhh09AYAOHstsTw38tHrgH9ypJOD1jsIQj8LZG01gntzUSCAAS8wGStQhihBZ1GrWX7STh8EqHbq5c/SoUc2uI86P1HYuDrFataN/N19KW6xaSpRTcTEMBasg+IoxAx6uDJMax1lbvIOm8NSZb9Fwu10PWPyf2CQk80Li5aQRqzSeIu52EoTskzuKgAFu0aOfzGDFtjqhkfhDphWFLMYatqDftpfBhrlqomD7zuVY61+XYg0qK/qva8dt+yKH6IE=
