@@ -4,9 +4,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/ToDoist/config"
-	"github.com/ToDoist/server"
 	"github.com/urfave/cli"
+	"ToDoist/server"
+	"ToDoist/config"
 )
 
 func init() {
