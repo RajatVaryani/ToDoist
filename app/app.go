@@ -1,14 +1,15 @@
 package app
 
 import (
-	"github.com/urfave/cli"
-	"os"
 	"log"
-	"github.com/ToDoist/server"
+	"os"
+
 	"github.com/ToDoist/config"
+	"github.com/ToDoist/server"
+	"github.com/urfave/cli"
 )
 
-func init()  {
+func init() {
 	log.Print("Starting the app!'")
 	clientApp := cli.NewApp()
 
@@ -17,8 +18,8 @@ func init()  {
 
 	clientApp.Commands = []cli.Command{
 		{
-			Name: "run",
-			Description:"Starts the server",
+			Name:        "run",
+			Description: "Starts the server",
 			Action: func(c *cli.Context) {
 				server.StartServer(config.Port())
 			},
