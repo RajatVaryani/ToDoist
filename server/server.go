@@ -1,7 +1,6 @@
 package server
 
 import (
-	"ToDoist/router"
 	"github.com/urfave/negroni"
 	"github.com/gorilla/context"
 	"strconv"
@@ -10,6 +9,7 @@ import (
 	"syscall"
 	"github.com/tylerb/graceful"
 	"time"
+	"github.com/ToDoist/router"
 )
 
 const timeout = time.Second * 5

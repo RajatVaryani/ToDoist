@@ -3,9 +3,9 @@ package app
 import (
 	"github.com/urfave/cli"
 	"os"
-	"ToDoist/server"
-	"ToDoist/config"
 	"log"
+	"github.com/ToDoist/server"
+	"github.com/ToDoist/config"
 )
 
 func init()  {
