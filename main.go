@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	_ "ToDoist/app"
+	_ "ToDoist/config"
+)
 
 func main() {
-	fmt.Println("App started succesfully")
 }

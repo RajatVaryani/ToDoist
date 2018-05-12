@@ -9,4 +9,12 @@ import:
   version: 1.6.1
 - package: github.com/sirupsen/logrus
   version: 1.0.5
+- package: github.com/urfave/cli
+  version: 1.19.1
+- package: github.com/gojek-engineering/goconfig
+  version: 6012be80012d7149e967647ced1cfa4bf870b688
+- package: github.com/urfave/negroni
+  version: 0.3.0
+- package: github.com/tylerb/graceful
+  version: 1.2.15
 
