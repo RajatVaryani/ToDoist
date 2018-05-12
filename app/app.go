@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"ToDoist/config"
-	"ToDoist/server"
+	"github.com/ToDoist/config"
+	"github.com/ToDoist/server"
 	"github.com/urfave/cli"
 )
 

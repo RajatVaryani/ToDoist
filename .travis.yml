@@ -5,6 +5,7 @@ go:
 go_import_path: github.com/ToDoist
 script:
 - go test -v
+- go build
 deploy:
   provider: heroku
   app: to-doist

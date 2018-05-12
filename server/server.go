@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"github.com/tylerb/graceful"
 	"time"
-	"ToDoist/router"
+	"github.com/ToDoist/router"
 )
 
 const timeout = time.Second * 5
