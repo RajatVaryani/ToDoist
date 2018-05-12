@@ -1,16 +1,18 @@
 package handlers
 
-import "net/http"
+import (
+	"net/http"
+)
 
-func HomeHandler() http.HandlerFunc  {
+func HomeHandler() http.HandlerFunc {
 	return func(writer http.ResponseWriter, request *http.Request) {
 		setupResponse(&writer, request)
 
 		if (*request).Method == "OPTIONS" {
 			return
 		}
-
 		writer.WriteHeader(http.StatusOK)
+		writer.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	}
 }
 
