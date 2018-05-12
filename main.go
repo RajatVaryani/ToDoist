@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "ToDoist/app"
-	_ "ToDoist/config"
+	_ "github.com/ToDoist/app"
+	_ "github.com/ToDoist/config"
 )
 
 func main() {
