@@ -1,1 +1,1 @@
-web: ./ToDoist run
+web: ToDoist run
