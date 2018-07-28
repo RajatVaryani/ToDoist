@@ -6,18 +6,14 @@ import (
 
 func HomeHandler() http.HandlerFunc {
 	return func(writer http.ResponseWriter, request *http.Request) {
-		setupResponse(&writer, request)
+		writer.Header().Set("access-control-allow-origin", "*")
+		writer.Header().Set("access-control-allow-methods", "GET, POST, PATCH, DELETE")
+		writer.Header().Set("access-control-allow-headers", "accept, content-type")
 
 		if (*request).Method == "OPTIONS" {
 			return
 		}
-		writer.WriteHeader(http.StatusOK)
-		writer.Header().Set("Content-Type", "application/json; charset=UTF-8")
-	}
-}
 
-func setupResponse(w *http.ResponseWriter, req *http.Request) {
-	(*w).Header().Set("access-control-allow-origin", "*")
-	(*w).Header().Set("access-control-allow-methods", "POST, GET, OPTIONS, PUT, DELETE")
-	(*w).Header().Set("access-control-allow-headers", "accept, content-Type")
+		writer.WriteHeader(http.StatusOK)
+	}
 }
